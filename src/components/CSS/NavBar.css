@@ -1,17 +1,20 @@
-/* NavBar.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #333;
+  padding: 0.75rem; /* Reduje el padding */
+  background-color: #4a5568;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .title {
-  font-size: 1.5rem; /* Ajusta el tamaño del título según tus preferencias */
-  color: white; /* Ajusta el color del texto según tus preferencias */
-  margin-right: 10px; /* Ajusta el margen entre el título y los botones según tus preferencias */
+  font-size: 1rem; /* Reduje el tamaño de la fuente */
+  color: white;
+  margin-right: 0.75rem; /* Reduje el margen derecho */
 }
 
 .centered-buttons {
@@ -23,11 +26,16 @@
 .orange-button {
   background-color: orange;
   color: white;
-  padding: 15px 100px;
+  padding: 1rem 2rem; /* Reduje el padding */
   border: none;
-  border-radius: 5px;
+  border-radius: 0.25rem; /* Reduje el radio del borde */
   cursor: pointer;
-  margin-right: 10px; /* Ajusta el margen entre los botones según tus preferencias */
+  margin-right: 0.75rem; /* Reduje el margen derecho */
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #4a5568;
+  }
 }
 
 .right-button {
@@ -37,12 +45,17 @@
 .login-button {
   background-color: #007bff;
   color: white;
-  padding: 10px 15px;
+  padding: 0.75rem 1rem; /* Reduje el padding */
   border: none;
-  border-radius: 5px;
+  border-radius: 0.25rem; /* Reduje el radio del borde */
   cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
 }
 
-.login-button:hover {
-  background-color: #0056b3;
+body {
+  margin-top: 3rem; /* Reduje el margen superior */
 }
