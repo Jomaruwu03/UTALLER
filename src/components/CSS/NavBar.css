@@ -1,0 +1,48 @@
+/* NavBar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+}
+
+.title {
+  font-size: 1.5rem; /* Ajusta el tamaño del título según tus preferencias */
+  color: white; /* Ajusta el color del texto según tus preferencias */
+  margin-right: 10px; /* Ajusta el margen entre el título y los botones según tus preferencias */
+}
+
+.centered-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange-button {
+  background-color: orange;
+  color: white;
+  padding: 15px 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Ajusta el margen entre los botones según tus preferencias */
+}
+
+.right-button {
+  margin-left: auto;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
